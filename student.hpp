@@ -7,10 +7,17 @@ using namespace std;
 // ===============
 // implementations
 
-//Replace string function
-int function()
+void exerciseOne() //takes in one word
 {
-	return "0"; // TODO: fix
+	// TODO: fix
 }
 
+void exerciseTwo() //takes in one mark
+{
+	// TODO: fix. Returns a word
+}
 
+void exerciseThree() //takes in one number
+{
+	// TODO: fix. Returns a word, or a number in string format
+}
