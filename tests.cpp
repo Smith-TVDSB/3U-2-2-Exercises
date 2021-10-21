@@ -24,59 +24,59 @@ TEST_CASE("Exercise One", "[example]") //Named ExerciseOne, tagged with example
 TEST_CASE("Exercise Two")
 {
     //Checks if 100 is a pass
-    std::string result = exerciseTwo(100)
+    std::string result = exerciseTwo(100);
     std::for_each(result.begin(),result.end(),[] (char & c)){
     c= ::tolower(c);
     }
-    CHECK(result=="passed")
+    CHECK(result=="passed");
 
     //Checks if 50 is a pass
-    result = exerciseTwo(50)
+    result = exerciseTwo(50);
     std::for_each(result.begin(),result.end(),[] (char & c)){
     c= ::tolower(c);
     }
-    CHECK(result=="passed")
+    CHECK(result=="passed");
 
     //Checks if 49 is not a pass
-    result = exerciseTwo(50)
+    result = exerciseTwo(50);
     std::for_each(result.begin(),result.end(),[] (char & c)){
     c= ::tolower(c);
     }
-    CHECK(result!="passed")
+    CHECK(result!="passed");
 }
 
 TEST_CASE("Exercise Three")
 {
     //Checks if 33 is a fizz
-    std::string result = exerciseThree(33)
+    std::string result = exerciseThree(33);
     std::for_each(result.begin(),result.end(),[] (char & c)){
     c= ::tolower(c);
     }
-    CHECK(result=="fizz")
+    CHECK(result=="fizz");
 
     //Checks if 125 is a buzz
-    result = exerciseThree(125)
+    result = exerciseThree(125);
     std::for_each(result.begin(),result.end(),[] (char & c)){
     c= ::tolower(c);
     }
-    CHECK(result=="buzz")
+    CHECK(result=="buzz");
 
     //Checks if 105 is a fizzbuzz
-    result = exerciseThree(33)
+    result = exerciseThree(33);
     std::for_each(result.begin(),result.end(),[] (char & c)){
     c= ::tolower(c);
     }
-    CHECK(result=="fizzbuzz")
+    CHECK(result=="fizzbuzz");
 
     //Checks if 77 is a number
-    result = exerciseThree(77)
-    CHECK(result=="77")
+    result = exerciseThree(77);
+    CHECK(result=="77");
 
     //Checks if 91 is a number
-    result = exerciseThree(91)
-    CHECK(result=="91")
+    result = exerciseThree(91);
+    CHECK(result=="91");
 
     //Checks if 254 is a number
-    result = exerciseThree(254)
-    CHECK(result=="254")
+    result = exerciseThree(254);
+    CHECK(result=="254");
 }
