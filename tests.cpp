@@ -16,8 +16,8 @@ TEST_CASE("Exercise One", "[example]") //Named ExerciseOne, tagged with example
     
     //TODO: Set up tests
     CHECK(exerciseOne("agent")==10); 
-    CHECK(exerciseOne("Agent")==10);
-    REQUIRE(exerciseOne("AGENT")==10);
+    CHECK(exerciseOne("agents")==0);
+    REQUIRE(exerciseOne("AGENTs of oaks")==0);
         
 }
 
@@ -25,6 +25,7 @@ TEST_CASE("Exercise Two")
 {
     //Checks if 100 is a pass
     std::string result = exerciseTwo(100);
+    //Converts the return value to lowercase to make it not case sensitive
     std::for_each(result.begin(),result.end(),[] (char & c){
     c= ::tolower(c);
     });
