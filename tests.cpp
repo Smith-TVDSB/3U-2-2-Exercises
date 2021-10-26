@@ -4,6 +4,7 @@
 
 #define CATCH_CONFIG_MAIN // defines main() automatically
 #include "catch.hpp"
+#include <string>
 
 #include "student.hpp" // student implementations
 
