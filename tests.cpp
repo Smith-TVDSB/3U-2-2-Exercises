@@ -40,7 +40,7 @@ TEST_CASE("Exercise Two")
     CHECK(result=="passed");
 
     //Checks if 49 is not a pass
-    result = exerciseTwo(50);
+    result = exerciseTwo(49);
     std::for_each(result.begin(),result.end(),[] (char & c){
     c= ::tolower(c);
     });
@@ -64,7 +64,7 @@ TEST_CASE("Exercise Three")
     CHECK(result=="buzz");
 
     //Checks if 105 is a fizzbuzz
-    result = exerciseThree(33);
+    result = exerciseThree(105);
     std::for_each(result.begin(),result.end(),[] (char & c){
     c= ::tolower(c);
     });
