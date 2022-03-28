@@ -12,7 +12,7 @@
 // tests for exercise 1
 // ---------------------
 
-TEST_CASE("Exercise One", "[example]") //Named ExerciseOne, tagged with example
+TEST_CASE("Ex1", "[example]") //Named ExerciseOne, tagged with example
 {
     
     //TODO: Set up tests
@@ -22,7 +22,7 @@ TEST_CASE("Exercise One", "[example]") //Named ExerciseOne, tagged with example
         
 }
 
-TEST_CASE("Exercise Two")
+TEST_CASE("Ex2")
 {
     //Checks if 100 is a pass
     std::string result = exerciseTwo(100);
@@ -47,7 +47,7 @@ TEST_CASE("Exercise Two")
     CHECK(result!="passed");
 }
 
-TEST_CASE("Exercise Three")
+TEST_CASE("Ex3")
 {
     //Checks if 33 is a fizz
     std::string result = exerciseThree(33);
